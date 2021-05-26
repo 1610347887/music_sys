@@ -1,0 +1,45 @@
+@import "var.scss";
+@import "global.scss";
+
+.setting {
+  //position: absolute;
+  //top: $header-height;
+  //background-color: $color-light-grey;
+  background-image: url("~@/assets/img/swiper/1.jpg");
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  border-radius: 10px;
+  width: 250px;
+  margin-left: 850px;
+  margin-bottom: 43px;
+  margin-top: $header-height - 20px;
+  padding: 30px 30px;
+
+  // 图片
+  .avator-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: -40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid $color-white;
+    img {
+      width: 100%;
+    }
+  }
+
+  .userInfo-head {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .login-btn {
+    text-align: center;
+    button {
+      width: 50%;
+    }
+  }
+}

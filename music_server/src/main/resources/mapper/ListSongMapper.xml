@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huan.music_sys.mapper.ListSongMapper">
+    <select id="getSongList" resultType="com.huan.music_sys.domain.vo.ListSongAndSongVo">
+        select `name` from song where id in(
+            select song_id from list_song where song_list_id = #{songListId}
+        )
+    </select>
+
+    <select id="getSongListById" resultType="com.huan.music_sys.domain.Song">
+        select *from song where id in(
+            select song_id from list_song where song_list_id = #{songListId}
+        )
+    </select>
+
+
+</mapper>

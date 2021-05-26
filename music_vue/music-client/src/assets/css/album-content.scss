@@ -1,0 +1,62 @@
+@import "var.scss";
+@import "global.scss";
+
+.content {
+  //background-color: $color-white;
+  background-image: url("~@/assets/img/swiper/1.jpg");
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  border-radius: $border-radius-songlist;
+  padding: 20px 40px;
+  min-width: 700px;
+
+  .title {
+    text-align: center;
+  }
+  > ul {
+    width: 100%;
+    padding-bottom: 50px;
+    > li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-indent: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.song-item {
+  @include layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  .item-index {
+    width: 5%;
+    text-align: center;
+  }
+  .item-title {
+    width: 30%;
+    text-align: center;
+  }
+  .item-name {
+    width: 25%;
+    text-align: center;
+  }
+  .item-intro {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+.is-play {
+  color: $color-blue-active;
+  font-weight: bold;
+}
+
+.icon {
+  @include icon(1.3em, $color-blue-active);
+  vertical-align: -0.3em;
+  right: 5px;
+}

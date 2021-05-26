@@ -1,0 +1,16 @@
+@import "var.scss";
+@import "global.scss";
+
+#app {
+  background-color: $theme-background-color;
+  //background-image: url("~@/assets/img/swiper/1.jpg");
+  //background-color: pink;
+  background-image: url("~@/assets/img/swiper/1.jpg");
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  @include layout(flex-start, stretch, column);
+}
+
+.music-content {
+  flex: 1;
+}

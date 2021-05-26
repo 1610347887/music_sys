@@ -1,0 +1,16 @@
+@import "var.scss";
+@import "global.scss";
+
+.the-footer {
+  width: 100%;
+  height: $footer-height;
+  //background-color: $theme-footer-color;
+  //background-color: pink;
+  background-image: url("~@/assets/img/swiper/1.jpg");
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  @include layout(center, center, column);
+  p {
+    height: 30px;
+  }
+}
