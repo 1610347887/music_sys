@@ -15,7 +15,9 @@
 
 #### 使用说明
 
-1.  xxxx
+1.  音乐MP3存放在网盘上了，需要的可以去下：
+链接：https://pan.baidu.com/s/13BtADZ4rWbc1Tqm8VOxpjA 
+提取码：whms 
 2.  xxxx
 3.  xxxx
 
